@@ -1,0 +1,14 @@
+n=int(input())
+len=len(str(n))
+temp=n
+r=0
+sum=0
+while(temp>0):
+    r=temp%10
+    sum=sum+int(r**len)
+    temp=temp//10
+    len=len-1
+if(sum==n):
+    print(True)
+else:
+    print(False)
