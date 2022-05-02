@@ -1,3 +1,3 @@
 n=int(input())
-ans=n//10
-print(ans)
+d=n//10
+print("%d"%d)
