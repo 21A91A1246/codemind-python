@@ -1,11 +1,11 @@
 n=int(input())
-temp=n
-sum=0
-while n>0:
- r=n%10
- sum=sum+r
- n=n//10
-if(temp%sum==0):
+s=0
+t=n
+while(n):
+    r=n%10
+    s=s+r
+    n=n//10
+if(t%s==0):
     print(True)
 else:
     print(False)
