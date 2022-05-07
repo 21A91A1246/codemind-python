@@ -1,10 +1,10 @@
 a,b=map(int,input().split())
 if(a>b):
-    g=a
+    m=a
 else:
-    g=b
+    m=b
 while(True):
-    if(g%a==0 and g%b==0):
-        print("%d"%g)
+    if(m%a==0 and m%b==0):
+        print(m)
         break
-    g+=1
+    m+=1
