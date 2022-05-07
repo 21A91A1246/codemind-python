@@ -1,7 +1,10 @@
 import math
-n=int(input())
-sq=int(math.sqrt(n))
-if(sq*sq==n):
-    print('True')
+
+# Taking the input from user
+n= int(input())
+
+root = math.sqrt(n)
+if int(root + 0.5) ** 2 == n:
+    print("True")
 else:
-    print('False')
+    print("False")
