@@ -5,7 +5,7 @@ while(n):
     r=n%10
     s=s+r
     m=m*r
-    n=n//10
+    n//=10
 if(s==m):
     print('Spy Number')
 else:
