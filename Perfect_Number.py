@@ -1,10 +1,10 @@
 n=int(input())
-sum=0
-for x in range(1,n):
-    if(n%x==0):
-        sum+=x
-if(sum==n):
+a=n
+s=0
+for i in range(1,n):
+    if n%i==0:
+        s=s+i
+if s==a:
     print(True)
 else:
     print(False)
-    
