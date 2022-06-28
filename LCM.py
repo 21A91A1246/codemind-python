@@ -1,10 +1,11 @@
 a,b=map(int,input().split())
-if(a>b):
-    m=a
+if a>b:
+    ma=a
 else:
-    m=b
+    ma=b
 while(True):
-    if(m%a==0 and m%b==0):
-        print(m)
+    if((ma%a==0) and (ma%b==0)):
+        lcm=ma
         break
-    m+=1
+    ma+=1
+print(ma)
