@@ -1,4 +1,4 @@
 n=int(input())
-a=str(n)
-b=list(a)
-print(max(b))
+x=str(n)
+y=list(x)
+print(max(y))
