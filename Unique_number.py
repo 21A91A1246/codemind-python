@@ -1,11 +1,11 @@
 n=int(input())
-x=str(n)
-y=list(x)
-b=[]
-for i in y:
-    if i not in b:
-        b.append(i)
-if(b==y):
+a=str(n)
+b=list(a)
+c=[]
+for i in b:
+    if i not in c:
+        c.append(i)
+if c==b:
     print("Unique Number")
 else:
     print("Not Unique Number")
