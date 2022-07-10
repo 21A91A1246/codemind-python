@@ -1,0 +1,16 @@
+x=int(input())
+e=0
+o=0
+while(x!=0):
+ d=x%10
+ if(d%2==0):
+  e+=1
+ else:
+  o+=1
+ x=x//10
+if(e==0):
+ print("Odd")
+elif(o==0):
+ print("Even")
+else:
+    print("Mixed")
