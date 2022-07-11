@@ -1,8 +1,8 @@
 n=int(input())
 a=list(map(int,input().split()))
-c=sorted(set(a))
-b=a[::1]
-if c==b:
-    print('yes')
+b=set(a)
+b=sorted(b)
+if a==b:
+    print("yes")
 else:
-    print('no')
+    print("no")
