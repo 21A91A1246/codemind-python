@@ -1,19 +1,16 @@
-def fun(n):
+n=int(input())
+a=list(map(int,input().split()))
+b=[]
+for i in a:
+    if i<0:
+        i=i*(-1)
     c=0
-    if(n<0):
-        n=n*(-1)
-    while(n):
-        r=n%10
+    if i==0:
+        b.append(1)
+        continue
+    while(i):
         c+=1
-        n//=10
-    return c
-a=int,input()
-x=list(map(int,input().split()))
-#print(x)
-f=[]
-#print(x)
-for i in x:
-   if i==0:
-       print('1',end=' ')
-       continue
-   print(fun(i),end=' ')
+        i//=10
+    b.append(c)
+print(*b)
+    
