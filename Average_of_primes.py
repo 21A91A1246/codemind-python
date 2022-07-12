@@ -1,17 +1,19 @@
-def prime(n):
+def fun(n):
     for i in range(2,n):
-        if(n%i==0):
+        if n%i==0:
             return 0
     else:
         return 1
 n=int(input())
 a=list(map(int,input().split()))
+s=0
 c=0
-b=[]
-for i in range(n):
-    if a[i]==1:
+for i in a:
+    if i==1:
         continue
-    if prime(a[i]):
-        b.append(a[i])
-res=(sum(b)/len(b))
-print('{:.2f}'.format(res))
+    if fun(i)==1:
+        c+=1
+        k=i
+        s=s+k
+print('{:.2f}'.format(s/c))
+        
