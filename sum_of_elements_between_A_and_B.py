@@ -1,11 +1,9 @@
 n=int(input())
 a=list(map(int,input().split()))
-x,y=map(int,input().split())
-b=[]
+b,c=map(int,input().split())
 k=0
+l=[]
 for i in range(n):
-    if a[i]>=x and a[i]<=y:
-        b.append(a[i])
-        #print(a[i])
-print(sum(b))
-        
+    if a[i]>=b and a[i]<=c:
+        l.append(a[i])
+print(sum(l))
