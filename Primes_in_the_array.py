@@ -1,4 +1,4 @@
-def prime(n):
+def fun(n):
     for i in range(2,n):
         if n%i==0:
             return 0
@@ -10,6 +10,6 @@ c=0
 for i in range(n):
     if a[i]==1:
         continue
-    if prime(a[i]):
+    if fun(a[i]):
         c+=1
 print(c)
