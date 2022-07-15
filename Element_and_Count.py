@@ -1,7 +1,14 @@
 n=int(input())
 a=list(map(int,input().split()))
-s=[]
-for i in a:
-    if i not in s:
-     s.append(i)
-     print(i,a.count(i),end=' ')
+c=[]
+b=[]
+for i in range(n):
+   if a[i] in b:
+       continue
+   b.append(a[i])
+   c.append(a[i]) 
+   c.append(a.count(a[i]))
+print(*c)   
+   
+   
+    
