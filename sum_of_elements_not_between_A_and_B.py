@@ -1,11 +1,13 @@
-k=int(input())
+n=int(input())
 a=list(map(int,input().split()))
-m,n=map(int,input().split())
-s=0
-for i in a:
-    if m<=i and n>=i:
-        continue
-    else:
-        s=s+i
-print(s)     
+#print(a)
+x,y=map(int,input().split())
+#print(x,y)
+k=0
+max=0
+for i in range(n):
+    if a[i]<x or a[i]>y:
+        k=k+a[i]
+print(k,end=' ')
+
         
