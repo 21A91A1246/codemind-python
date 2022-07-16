@@ -1,7 +1,7 @@
 n=int(input())
 a=list(map(int,input().split()))
 b=[]
-for i in range(n):
-    if a[i] not in b:
-        b.append(a[i])
+for i in a:
+    if i not in b:
+        b.append(i)
 print(*b)
