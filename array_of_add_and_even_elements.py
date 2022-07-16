@@ -1,8 +1,11 @@
-s=int(input())
-b=list(map(int,input().split()))
-for i in range(s):
-    if b[i]%2!=0:
-        print(b[i],end=' ')
-for i in range(s):
-    if b[i]%2==0:
-        print(b[i],end=' ')
+n=int(input())
+a=list(map(int,input().split()))
+#print(a)
+
+
+for i in range(n):
+    if a[i]%2!=0:
+        print(a[i],end=' ')
+for i in range(n):
+    if a[i]%2==0:
+        print(a[i],end=' ')
