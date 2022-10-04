@@ -1,13 +1,9 @@
-n=int(input())
-a=list(map(int,input().split()))
-k=0
-for i in range(n):
-    if a[i]%2!=0 and i%2==0:
-        k=1
+b=int(input())
+z=list(map(int,input().split()))
+#x=int(input())
+for i in range(b):
+    if z[i]%2!=0 and i%2==0:
+        print(False)
         break
-if k==1:
-    print(False)
 else:
     print(True)
-        
-
