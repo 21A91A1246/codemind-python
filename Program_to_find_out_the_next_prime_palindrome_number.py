@@ -16,7 +16,7 @@ def pal(k):
     else:
         return 0
 n=int(input())
-for i in range(n+1,1000000):
+for i in range(n+1,100000):
     if prime(i):
         if pal(i):
             print(i)
