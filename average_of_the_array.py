@@ -1,0 +1,5 @@
+a=int(input())
+s=list(map(int,input().split()))
+b=sum(s)
+m=(b/a)
+print('{:.2f}'.format(m))
