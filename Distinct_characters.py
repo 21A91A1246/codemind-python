@@ -5,8 +5,10 @@ b=[]
 for i in range(len(s)):
     if s[i]==' ':
         continue
-    if s.count(s[i])==1:
+    if s[i] not in a:
         a.append(s[i])
-b=sorted(a)
+for i in a:
+    b.append(ord(i))
+b=sorted(b)
 for i in b:
-    print(i,end='')
+    print(chr(i),end='')
