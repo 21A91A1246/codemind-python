@@ -1,12 +1,11 @@
-n=int(input())
-flag=True
-if n>1:
-    for i in range(2,n):
-        if(n%i==0):
-            flag=False
-            break
-if flag:
-    print('prime')
+def prime(s):
+    for i in range(2,s//2):
+        if s%i==0:
+            return 0
+    else:
+        return 1
+b=int(input())
+if prime(b):
+    print("prime")
 else:
-    print('not a prime')
-        
+    print("not a prime")
