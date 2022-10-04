@@ -9,3 +9,5 @@ for i in range(n):
     elif a[i]%2!=0 and a[i+2]%2==0:
         c+=1
 print(c)
+    
+        
