@@ -1,4 +1,9 @@
 a=input()
-l = a.split()
-b=min(l, key=len)
+#print(a)
+b=[]
+for i in a:
+    if i==' ':
+        break
+    b.append(i)
+
 print(len(b))
