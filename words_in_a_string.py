@@ -1,4 +1,6 @@
 a=input()
-b=a.split()
-print(len(b))
-#print(len(c))
+c=1
+for i in a:
+    if i==' ':
+        c+=1
+print(c)
