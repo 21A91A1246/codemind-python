@@ -1,10 +1,12 @@
-a=input()
 s=input()
-if s in a:
-        print(True)
-for i in range(len(a)):
-    if s in a[i]:
-        print(i)
+a=input()
+k=0
+for i in range(len(s)):
+    if s[i]==a:
+        k=1
         break
-else:
+if k==0:
     print(False)
+else:
+    print(True)
+    print(i)
