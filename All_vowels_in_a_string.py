@@ -1,15 +1,16 @@
 s=input()
-k='aeiou'
-k1='AEIOU'
-a=''
-a1=''
+#s=s.lower()
+s=set(s)
+#print(s)
+c=0
+c1=0
 for i in s:
-    if i in k and i not in a:
-        a=a+i
-for i in s:
-    if i in k1 and i not in a1:
-        a1=a1+i        
-if len(a)==len(k) or len(a1)==len(k1):
-    print("True")
+    if i in "aeiou":
+        c+=1
+    elif i in "AEIOU":
+        c1+=1
+
+if c==5 or c1==5:
+    print(True)
 else:
-    print("False")
+    print(False)
