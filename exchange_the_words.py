@@ -1,4 +1,4 @@
-a=input()
-b=a.split()
-c=b[::-1]
-print(*c)
+s=input()
+s=s.split()
+s=(s[::-1])
+print(*s)
