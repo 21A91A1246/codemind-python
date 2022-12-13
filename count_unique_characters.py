@@ -1,9 +1,9 @@
 s=input()
 s=s.lower()
-a=[]
-for i in range(len(s)):
-    if s[i]==' ':
+x=[]
+for i in s:
+    if i==' ':
         continue
-    if s.count(s[i])==1:
-        a.append(s[i])
-print(len(a))
+    else:
+        x.append(s.count(i))
+print(x.count(1))
